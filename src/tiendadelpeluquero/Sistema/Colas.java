@@ -11,7 +11,7 @@ import java.util.Queue;
 /**
  *
  * @author PC267
- */
+ *///hecho por: Jose David Zapata Jaramillo  y Michel Augusto Velasquez Ibarra
 public class Colas {
     
     private Queue<String> cola;

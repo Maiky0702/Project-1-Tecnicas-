@@ -7,7 +7,7 @@ package tiendadelpeluquero.Sistema;
 /**
  *
  * @author PC267
- */
+ *////hecho por: Jose David Zapata Jaramillo  y Michel Augusto Velasquez Ibarra
 public class Node {
     
     public String value;

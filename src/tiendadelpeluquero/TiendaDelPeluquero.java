@@ -13,6 +13,9 @@ import java.util.Scanner;
 /**
  *
  * @author PC267
+ * //hecho por:
+ * Jose David Zapata Jaramillo
+ * Michel Augusto Velasquez Ibarra
  */
 public class TiendaDelPeluquero {
 
@@ -72,12 +75,7 @@ public class TiendaDelPeluquero {
         long costoInventario = (long) costoInvCera + costoInvSecador
                 + costoInvShampoo + costoInvPlancha + costoInvCrema;
         
-        System.out.println(costoInvCera);
-        System.out.println(costoInvSecador);
-        System.out.println(costoInvPlancha);
-        System.out.println(costoInvShampoo);
-        System.out.println(costoInvCrema);
-        System.out.println(costoInventario);
+        
         
         HashMap<String, String> productosCabello = new HashMap<String, String>();
         productosCabello.put("001", "Cera de peinar");
@@ -106,14 +104,14 @@ public class TiendaDelPeluquero {
             switch(option){
                 case 1:
                     System.out.println("cantidad de cera disponible:" + cantCera);
-                    System.out.println("Valor por unidad de cera: " + costoCera);
+                    System.out.println("Valor por unidad de cera: " + costoCera + " pesos");
                     System.out.println("cantidad ha pedir de cera:");
                     int pedidoCera = pedidos.nextInt();
                     int restanteCera = cantCera - pedidoCera;
                     long costoTotalCera = (long) pedidoCera * costoCera;
                     
                     System.out.println("cantidad de secadores disponibles:" + cantSecador);
-                    System.out.println("Valor por unidad de secadores: " + costoSecador);
+                    System.out.println("Valor por unidad de secadores: " + costoSecador + " pesos");
                     System.out.println("cantidad ha pedir de secadores:");
                     int pedidoSecador = pedidos.nextInt();
                     int restanteSecador = cantSecador - pedidoSecador;
@@ -121,7 +119,7 @@ public class TiendaDelPeluquero {
                  
                         
                     System.out.println("cantidad de planchas disponibles:" + cantPlancha);
-                    System.out.println("Valor por unidad de planchas: " + costoPlancha);
+                    System.out.println("Valor por unidad de planchas: " + costoPlancha + " pesos");
                     System.out.println("cantidad ha pedir de planchas:");
                     int pedidoPlancha = pedidos.nextInt();
                     int restantePlancha = cantPlancha - pedidoPlancha;
@@ -129,7 +127,7 @@ public class TiendaDelPeluquero {
                    
                      
                     System.out.println("cantidad de shampoo disponible:" + cantShampoo);
-                    System.out.println("Valor por unidad de shampoo: " + costoShampoo);
+                    System.out.println("Valor por unidad de shampoo: " + costoShampoo + " pesos");
                     System.out.println("cantidad ha pedir de shampoo:");
                     int pedidoShampoo = pedidos.nextInt();
                     int restanteShampoo = cantShampoo - pedidoShampoo;
@@ -137,7 +135,7 @@ public class TiendaDelPeluquero {
                    
                      
                     System.out.println("cantidad de crema disponible:" + cantCrema);
-                    System.out.println("Valor por unidad de crema: " + costoCrema);
+                    System.out.println("Valor por unidad de crema: " + costoCrema + " pesos");
                     System.out.println("cantidad ha pedir de crema:");
                     int pedidoCrema = pedidos.nextInt();
                     int restanteCrema = cantCrema - pedidoCrema;
@@ -156,11 +154,15 @@ public class TiendaDelPeluquero {
                                        
                     System.out.println("Tu pedido actual es:");
                     System.out.println("cera: " + pedidoCera + " con un valor de: " + costoTotalCera);
-                    System.out.println("Secadores: " + pedidoSecador + " con un valor de: " + costoTotalSecador);
-                    System.out.println("Shampoo: " + pedidoShampoo + " con un valor de: " + costoTotalShampoo);
-                    System.out.println("plancha :" + pedidoPlancha + " con un valor de: " + costoTotalPlancha);
-                    System.out.println("Cremas: " + pedidoCrema + " con un valor de: " + costoTotalCrema );
-                    System.out.println("Costo total del pedido:" + costoPedidoTotal);
+                    System.out.println("Secadores: " + pedidoSecador + " con un valor de: " 
+                            + costoTotalSecador + " pesos");
+                    System.out.println("Shampoo: " + pedidoShampoo + " con un valor de: " 
+                            + costoTotalShampoo + " pesos");
+                    System.out.println("plancha :" + pedidoPlancha + " con un valor de: " 
+                            + costoTotalPlancha + " pesos");
+                    System.out.println("Cremas: " + pedidoCrema + " con un valor de: " 
+                            + costoTotalCrema + " pesos" );
+                    System.out.println("Costo total del pedido:" + costoPedidoTotal + " pesos");
                     
                           
                     System.out.println("Pulse 1 para finalizar el pedido");
@@ -175,19 +177,31 @@ public class TiendaDelPeluquero {
                             System.out.println("Shampoo: " + restanteShampoo + " unidades." );
                             System.out.println("Planchas: " + restantePlancha + " unidades.");
                             System.out.println("Cremas: " + restanteCrema + " unidades.");
-                            System.out.println("Total de artculos restantes por vender: " + totalInventarioActual + " unidades.");
-                            System.out.println("Valor de articulos restantes por vender: " + costoRestanteTotal);
+                            System.out.println("Total de artculos restantes por vender: " 
+                                    + totalInventarioActual + " unidades.");
+                            System.out.println("Valor de articulos restantes por vender: " 
+                                    + costoRestanteTotal + " pesos");
                             System.out.println("Total articulos vendidos: " + totalArticulosVendidos);
-                            System.out.println("diferencia del valor entre los articulos vendidos y los restantes: " + diferenciaValores);
+                            System.out.println("diferencia del valor entre los articulos vendidos y los restantes: " 
+                                    + diferenciaValores + " pesos");
                             return;
+                            
+                      
+                            
       
                     }
-                        
+                       
                     }
+
+
  
                 case 2:
                     System.out.println("proceso finalizado");
                     return;
+                    
+                default:
+                    System.out.println("Opcion no encontrada.");
+                    break;
 
         }
 
